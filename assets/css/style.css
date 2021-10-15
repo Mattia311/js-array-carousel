@@ -17,7 +17,7 @@
 .img-carosello > img {
     position: relative;
 }
-.arrow-top {
+#arrow-top {
     position: absolute;
     top: 113px;
     border-radius: 25px;
@@ -25,8 +25,9 @@
     width: 30px;
     border: none;
     margin-left: 57px;
+    cursor: pointer;
 }
-.arrow-bottom {
+#arrow-bottom {
     position: absolute;
     top: 458px;
     border-radius: 25px;
@@ -34,5 +35,6 @@
     width: 30px;
     border: none;
     margin-left: 57px;
+    cursor: pointer;
 
 }
