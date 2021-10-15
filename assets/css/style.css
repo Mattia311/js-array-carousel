@@ -1,0 +1,38 @@
+.container {
+    width: 73.3%;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+}
+#slider {
+    height: 400px;
+    width: 900px;
+}
+.img-carosello {
+    display: flex;
+    flex-direction: column;
+    width: 144px;
+}
+.img-carosello > img {
+    position: relative;
+}
+.arrow-top {
+    position: absolute;
+    top: 113px;
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: 57px;
+}
+.arrow-bottom {
+    position: absolute;
+    top: 458px;
+    border-radius: 25px;
+    height: 30px;
+    width: 30px;
+    border: none;
+    margin-left: 57px;
+
+}
