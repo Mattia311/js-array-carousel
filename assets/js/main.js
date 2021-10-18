@@ -25,24 +25,26 @@ const text = [
 
 const arrowTopButtonElement = document.getElementById('arrow-top');
 const arrowBottomButtonElement = document.getElementById('arrow-bottom');
-const img = document.querySelector('#slider')
-var titolo = document.getElementById('text').innerHTML;
-var corpo = document.getElementById('text1').innerHTML;
+const img = document.querySelector('#slider');
 
 // Al click scorre le immagini
 var corrente = 0
 var n_img = items.length -1
 var titolo = title.length -1
-var testo = text.length -1
+var paragrafo = text.length -1
+var info = document.getElementById('titolo');
+var para = document.querySelector('testo');
 arrowBottomButtonElement.addEventListener('click', function (){
     corrente++;
-    if((corrente > n_img) && (corrente > titolo) && (corrente > testo)){
+    if((corrente > n_img)){
         corrente = 0;
     }
     console.log(corrente);
     img.setAttribute('src','./' + items[corrente])
-    document.querySelector('text').innerHTML += titolo
-    document.querySelector('text1').innerHTML += testo
+    console.log(info + (title[corrente]));
+    info.innerHTML = (title[corrente]);
+    para.innerHTML = (text[corrente]);
+    console.log(para);
     
     
    /* console.log(items[corrente]);
